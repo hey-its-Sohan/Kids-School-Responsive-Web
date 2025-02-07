@@ -128,6 +128,7 @@ nav ul a{
 .curriculum-bg{
     background-image: url(./assets/bg.png);
     margin: 0px; 
+    width: 100%;
 }
 
 .curruculum-hding{
@@ -189,6 +190,8 @@ nav ul a{
     margin-right: 10px;
 }
 
+
+
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px ) {
@@ -208,8 +211,7 @@ nav ul a{
         gap: 50px;
         border: 2px solid turquoise;
         margin: 0px;
-        width: auto;
-        
+        width: auto;      
     }
 
     .banner-container{
@@ -231,8 +233,29 @@ nav ul a{
         text-align: center;
         font-size: 2.2rem;
     }
-}
 
+    /* Curriculum responsive */
+
+    .curriculum-container{
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+    }
+    .curruculum-hding{
+        font-size: 1.625rem;
+    }
+    .curriculum-des{
+        width: 267px;
+        margin-left: 25px;
+        
+    }
+    .curriculum-bg{
+        width: auto;
+        margin: 0px;
+    }
+    .nxt-btn{
+        display: none;
+    }
 
 
 
