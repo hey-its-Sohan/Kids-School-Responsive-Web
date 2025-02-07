@@ -13,6 +13,17 @@
     display: flex;
 }
 
+.curr-heading{
+    font-size: 1.53rem;
+    font-weight: bold;
+}
+.curr-para{
+    font-size: 0.94rem;
+    font-weight: 500;
+    color: #808080;
+}
+
+
 /* Nav bar style */
 
 .nav-container{
@@ -112,14 +123,71 @@ nav ul a{
     font-weight: bold;
 }
 
+/* School Curriculum */
 
+.curriculum-bg{
+    background-image: url(./assets/bg.png);
+    margin: 0px; 
+}
 
+.curruculum-hding{
+    font-size: 2.875rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 70px;
+}
 
+.curriculum-container{
+    margin-left: 140px;
+    gap: 40px;
+    width: 1220px;
+}
+.curriculum-des{
+    height: 350px;
+    width: 367px;
+    text-align: center;
+    padding: 50px 30px;
+    
+}
+.des-1{
+    background-image: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border: 2px solid #DEF5FF;
+    border-radius: 19px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
+    
+}
 
+.des-2{
+    background-image: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border: 2px solid #FFF4DC;
+    border-radius: 19px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
+    
+}
 
-
-
-
+.des-3{
+    background-image: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    border: 2px solid #F2E8FF;
+    border-radius: 19px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
+    
+}
+.btn-container{
+    text-align: center;
+    margin-top: 35px;
+}
+.nxt-btn{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: orange;
+    font-size: 34px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-right: 10px;
+}
 
 /* Responsive for mobile */
 
