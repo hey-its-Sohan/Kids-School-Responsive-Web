@@ -1,0 +1,185 @@
+/* QuickSand Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+/* Shared CSS Style */
+.display-flex{
+    display: flex;
+}
+
+/* Nav bar style */
+
+.nav-container{
+    gap: 186px;
+    max-width: 1440px;
+    margin: 20px 140px;
+    justify-content: space-between;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+.navigate-us{
+    list-style: none;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.home-clr{
+    color: orange;
+}
+
+.about-clr{
+    color: rgb(69, 185, 235);
+}
+#faciliteis-clr{
+    color: #05D4DF;
+}
+#admission-clr{
+    color: #5D58EF;
+}
+
+.school-top{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.contact-btn{
+    background-color: orange;
+    height: 50px;
+    width: 197px;
+    margin-top: 8px;
+    border-radius: 12px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+}
+.fa-solid, .fa-bars{
+    display: none;
+}
+/* .logo-img{
+    width: 100%;
+} */
+
+/* Banner Style */
+
+.banner-container{
+    justify-content: center;
+    align-items: center;
+    margin: 18px 140px;
+    gap: 150px;   
+}
+.banner-img{
+    /* border: 2px solid turquoise; */
+}
+.banner-details{
+    width: 640px;
+    /* border: 2px solid turquoise; */
+}
+.banner-heading{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.banner-para{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+    margin-top: 15px;
+    
+}
+
+.enroll-btn{
+    background-color: black;
+    height: 50px;
+    width: 197px;
+    border-radius: 12px;
+    padding: 10px 40px;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive for mobile */
+
+@media screen and (max-width: 576px ) {
+    .navigate-us, .school-top, .contact-btn{
+        display: none;
+        
+    }
+    
+    .fa-solid, .fa-bars{
+        display: contents;
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        border: 2px solid turquoise;
+        margin: 0px;
+        width: auto;
+        
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .banner-details{
+        width: 350px;
+        align-items: center;
+        margin: 5px;
+        text-align: center;
+    }
+    .banner-img{
+        width: 350px;
+        margin-bottom: 0px;
+        
+    }
+    .banner-heading{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* border: 2px solid turquoise; */
