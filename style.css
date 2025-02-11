@@ -27,9 +27,9 @@
 /* Nav bar style */
 
 .nav-container{
-    gap: 186px;
-    max-width: 1440px;
-    margin: 20px 140px;
+    gap: 10px;
+    max-width: 100%;
+    padding: 20px 140px;
     justify-content: space-between;
 }
 
@@ -85,13 +85,14 @@ nav ul a{
     justify-content: center;
     align-items: center;
     margin: 18px 140px;
-    gap: 150px;   
+    gap: 50px;   
 }
 .banner-img{
     /* border: 2px solid turquoise; */
+    width: 45%;
 }
 .banner-details{
-    width: 640px;
+    width:640px;
     /* border: 2px solid turquoise; */
 }
 .banner-heading{
@@ -137,13 +138,16 @@ nav ul a{
 }
 
 .curriculum-container{
-    margin-left: 140px;
-    gap: 40px;
-    width: 1220px;
+    margin-left: 135px;
+    gap: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 .curriculum-des{
     height: 350px;
-    width: 367px;
+    width: 320px;
     text-align: center;
     padding: 50px 30px;
     
@@ -171,6 +175,30 @@ nav ul a{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
     
 }
+.read{
+    margin-top: 30px;
+}
+.read-btn-1{
+    text-decoration: none;
+    font-size: 0.94rem;
+    font-weight: bold;
+    color: #64C8FF;
+    margin-top: 70px;
+}
+.read-btn-2{
+    text-decoration: none;
+    font-size: 0.94rem;
+    font-weight: bold;
+    color: #F0AA00;
+    margin-top: 70px;
+}
+.read-btn-3{
+    text-decoration: none;
+    font-size: 0.94rem;
+    font-weight: bold;
+    color: #8700FF;
+    margin-top: 700px;
+}
 .btn-container{
     text-align: center;
     margin-top: 35px;
@@ -188,8 +216,106 @@ nav ul a{
     margin-right: 10px;
 }
 
+/* Our Stories */
+.story-bg{
+    background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(254, 163, 1, 0.2)),url(./assets/bg.png);
+    width: 100%;
+}
+.story-heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.625rem;
+    color: #000000;
+}
 
+.story-cards-container{
+    width: 100%;
+    margin-left: 135px;
+}
 
+.cards{
+    display: flex;
+    gap: 40px;
+}
+.card-1-container{
+    width: 450px;
+    height: 580px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.card-img{
+    width: 100%;
+}
+.card-img.relative{
+    position: relative;
+}
+.card-btn{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 30px;
+    height: 47px;  
+    width: 174px; 
+    border-radius: 48px;
+    background-color: #3CD8E8;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    border: none;
+}
+
+.mini-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.mini-card-container{
+    height: 280px;
+    width: 290px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+.mini-card-img{
+    width: 100%;
+}
+.mini-card-img.relative{
+    position: relative;
+}
+.mini-card-btn{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 30px;
+    height: 38px;  
+    width: 174px; 
+    border-radius: 48px;
+    background-color: #3CD8E8;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+.card-hding{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 15px;
+    padding-bottom: 0px;
+}
+
+.card-para{
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #666666;
+    padding: 0px 15px;
+    
+}
+.mini-card-heading{
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 15px;
+}
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px ) {
@@ -197,9 +323,10 @@ nav ul a{
         display: none;
         
     }
+
     
     .fa-solid, .fa-bars{
-        display: contents;
+        display: block;
     }
 
     .logo-container{
@@ -215,15 +342,16 @@ nav ul a{
     .banner-container{
         flex-direction: column-reverse;
         gap: 5px;
-    }
-    .banner-details{
-        width: 350px;
-        align-items: center;
-        margin: 5px;
         text-align: center;
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+    }
+    .banner-details{   
+        width: 90%;
     }
     .banner-img{
-        width: 350px;
+        width: 300px;
         margin-bottom: 0px;
         
     }
@@ -231,22 +359,28 @@ nav ul a{
         text-align: center;
         font-size: 2.2rem;
     }
+    .banner-para{
+        font-size: 1rem;
+
+    }
 
     /* Curriculum responsive */
 
     .curriculum-container{
-        flex-direction: column;
-        width: auto;
+        grid-template-columns: 1fr;
+        margin-left: 30px;
+        justify-content: center;
+        width: 90%;
         margin: auto;
+        
     }
     .curruculum-hding{
         font-size: 1.625rem;
     }
     .curriculum-des{
-        width: 250px;
-        margin-left: 45px;
-        
+        width: 85%;   
     }
+
     .curriculum-bg{
         width: auto;
         margin: 0px;
@@ -255,7 +389,29 @@ nav ul a{
         display: none;
     }
 
+    /* Our stories responsive */
+    .story-cards-container{
+        margin: auto;
+    }
+    .card-1-container{
+        display: none;
+    }
 
+    .mini-cards{
+        grid-template-columns:repeat(2,1fr);
+        margin-left: 0px;
+        gap: 10px;
+    }
+    .mini-card-container{
+        margin-left: 0px;
+        width: 100%;
+        
+    }
+    .mini-card-btn{
+        width: 35%;
+    }
+
+}
 
 
 
