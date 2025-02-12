@@ -49,7 +49,7 @@ nav ul a{
 .about-clr{
     color: rgb(69, 185, 235);
 }
-#faciliteis-clr{
+#facilities-clr{
     color: #05D4DF;
 }
 #admission-clr{
@@ -74,7 +74,8 @@ nav ul a{
     font-weight: 600;
     padding: 10px 60px;
 }
-.fa-solid, .fa-bars{
+
+.bar-icon{
     display: none;
 }
 
@@ -153,7 +154,7 @@ nav ul a{
     
 }
 .des-1{
-    background-image: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
     border: 2px solid #DEF5FF;
     border-radius: 19px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
@@ -161,7 +162,7 @@ nav ul a{
 }
 
 .des-2{
-    background-image: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
     border: 2px solid #FFF4DC;
     border-radius: 19px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
@@ -169,7 +170,7 @@ nav ul a{
 }
 
 .des-3{
-    background-image: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
     border: 2px solid #F2E8FF;
     border-radius: 19px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05) inset;
@@ -197,7 +198,7 @@ nav ul a{
     font-size: 0.94rem;
     font-weight: bold;
     color: #8700FF;
-    margin-top: 700px;
+    margin-top: 70px;
 }
 .btn-container{
     text-align: center;
@@ -218,8 +219,7 @@ nav ul a{
 
 /* Our Stories */
 .story-bg{
-    background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(254, 163, 1, 0.2)),url(./assets/bg.png);
-    width: 100%;
+    background-image: url(./assets/bg.png),linear-gradient(rgba(255, 255, 255, 1),rgba(254, 163, 1, 0.2));
 }
 .story-heading{
     text-align: center;
@@ -229,7 +229,6 @@ nav ul a{
 }
 
 .story-cards-container{
-    width: 100%;
     margin-left: 135px;
 }
 
@@ -266,7 +265,8 @@ nav ul a{
 .mini-cards{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 20px 80px;
+    margin-left: 50px;
 }
 .mini-card-container{
     height: 280px;
@@ -316,6 +316,74 @@ nav ul a{
     color: #000000;
     padding: 15px;
 }
+.view-btn-container{
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+/* Footer */
+.footer-bg{
+    background-color: #01ACFD;
+}
+.footer-container{
+    display: flex;
+    padding: 80px;
+    gap: 17%;
+    margin-left: 40px;
+    width: 85%;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    width: 299px;
+    height: 81px;
+    gap: 5px;
+    
+}
+.footer-heading{
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: #FFFFFF;
+}
+.footer-para{
+    width: 399px;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    /* margin: 50px 10px; */
+}
+
+.footer-about{
+    align-items: center;
+}
+.about-scl{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    margin-left: 16px;
+    margin-top: 15px;
+}
+
+.footer-nav{
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-left: -25px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    
+}
+
+.keep-touch{
+    font-size: 1.625rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 15px;
+
+}
 /* Responsive for mobile */
 
 @media screen and (max-width: 576px ) {
@@ -323,20 +391,26 @@ nav ul a{
         display: none;
         
     }
-
+    .nav-container{
+        padding: 0px;
+        align-items: center;
+        margin: 0px 115px;
+        width: 400px;
+        
+    }
     
-    .fa-solid, .fa-bars{
+    .bar-icon{
         display: block;
+        margin-right: 90px;
     }
 
     .logo-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         gap: 50px;
-        border: 2px solid turquoise;
         margin: 0px;
-        width: auto;      
+              
     }
 
     .banner-container{
@@ -378,7 +452,8 @@ nav ul a{
         font-size: 1.625rem;
     }
     .curriculum-des{
-        width: 85%;   
+        width: 85%;
+        margin-left: 0px;   
     }
 
     .curriculum-bg{
@@ -401,15 +476,53 @@ nav ul a{
         grid-template-columns:repeat(2,1fr);
         margin-left: 0px;
         gap: 10px;
+        padding: 10px;
     }
     .mini-card-container{
-        margin-left: 0px;
+        /* margin-left: 0px; */
         width: 100%;
         
     }
+    .mini-card-heading{
+        font-size: 0.80rem;
+    }
     .mini-card-btn{
         width: 35%;
+        margin-left: 10px;
     }
+
+    /* footer responsive */
+    .footer-container{
+        flex-direction: column;
+        width: 90%;
+        padding: 10px 0px 10px 10px;
+        text-align: left;
+        margin-left: 10px;
+        gap: 2%;
+        margin-bottom: 0px;
+        
+    }
+    .footer-des-cont{
+        width: 50%;
+    }
+    .about-scl{
+        margin-left: 0px;
+    }
+    .footer-nav{
+        margin-left: -40px
+    }
+    
+    .footer-logo-img{
+        width: 30%;
+    }
+    .footer-para{
+        width: 320px;
+        font-size: 1rem;
+    }
+    .footer-heading{
+        font-size: 2rem;
+    }
+    
 
 }
 
